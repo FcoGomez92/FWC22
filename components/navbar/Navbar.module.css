@@ -1,0 +1,61 @@
+.container {
+  position:fixed;
+  height: 100vh;
+  background: transparent;
+  left:0;
+  z-index: 1;
+  animation: showup 2s;
+  animation-fill-mode: forwards;
+  max-height: 1117px;
+}
+.nav_side {
+  position:absolute;
+  left:-16px;
+  top:0;
+  z-index:-1
+}
+.list {
+  font-family: 'Inter';
+  font-weight: 300;
+  color:#A02E4F;
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+  gap:105px;
+  padding:20px;
+  margin:40px 0;
+}
+.list li:hover {
+  cursor:pointer;
+  text-decoration: underline;
+}
+.list svg path:hover{
+  fill: #351721;
+}
+.twitter_icon {
+  width: 30px;
+  margin:30px;
+}
+@keyframes showup {
+  0% {
+    transform: translateX(-185px);
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+@media (max-width: 600px) {
+  .nav_side{
+    height: 100vh;
+    left:-70px;
+  }
+  .list {
+    padding:5px;
+    margin:29px 0;
+    font-size: 12px;
+    gap:60px;
+  }
+  .twitter_icon {
+    width: 20px;
+  }
+}

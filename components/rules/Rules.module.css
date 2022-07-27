@@ -1,0 +1,12 @@
+.container {
+  display:flex;
+  width: 80%;
+  max-width: 900px;
+  gap:30px;
+  padding:30px;
+  background:#550065
+}
+.container h3{
+  font-family: 'Inter';
+  font-weight: 300;
+}
