@@ -1,5 +1,5 @@
 import dbConnect from "../../lib/dbConnect";
-import Wallet from "../../models/Wallet";
+import Wallet from "../../Models/Wallet";
 
 export default async function addWallet(req, res) {
   const { address } = req.body;
