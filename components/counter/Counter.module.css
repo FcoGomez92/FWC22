@@ -20,6 +20,11 @@
 .text{
   font-size: 30px;
 }
+.whitelist span {
+  position:absolute;
+  top:260%;
+  color:#f3c041;
+}
 .join {
   position:absolute;
   top:150%;
@@ -75,6 +80,7 @@
   background: #fff;
   transform: rotate(45deg);
 }
+
 @media (max-width: 600px) {
   .container {
     flex-direction:column;
@@ -119,4 +125,5 @@
   overflow: hidden;
   text-overflow: ellipsis;
   }
+  
 }

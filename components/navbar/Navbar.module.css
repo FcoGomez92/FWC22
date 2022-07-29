@@ -25,9 +25,38 @@
   padding:20px;
   margin:40px 0;
 }
+.list li {
+  position: relative;
+  width: fit-content;
+}
 .list li:hover {
   cursor:pointer;
   text-decoration: underline;
+}
+.list li span{
+  position: absolute;
+  top:50%;
+  left: calc(100% + 20px);
+  padding: 10px;
+  /* border-radius: 3px; */
+  background-color: #F3C041;
+  transform: translate(0, -50%);
+  color: #550065;
+  opacity:0;
+  transition: 0.2s;
+}
+.list li span::before {
+  content:"";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left:-7px;
+  top:50%;
+  background: #F3C041;
+  transform: translate(0,-50%) rotate(45deg);
+}
+.list li:hover > span {
+  opacity:1
 }
 .list svg path:hover{
   fill: #351721;
@@ -45,6 +74,9 @@
   }
 }
 @media (max-width: 600px) {
+  .container {
+    z-index: 2;
+  }
   .nav_side{
     height: 100vh;
     left:-70px;

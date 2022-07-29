@@ -8,25 +8,31 @@ export default async function addWallet(req, res) {
   if (!okAddress) {
     return res.status(400).json({
       status: "Error",
-      message: "Wallet doesn't fit the pattern",
+      message: "⛔️ Wallet doesn't fit the pattern.",
     });
   }
   await dbConnect();
-  const existWallet = await Wallet.findById(address);
+
+  const lowerCaseAddress = address.toLowerCase();
+
+  const existWallet = await Wallet.findById(lowerCaseAddress);
 
   if (existWallet) {
     return res.status(400).json({
       status: "Error",
-      message: "Wallet already added",
+      message: "🚫 Wallet already added.",
     });
   }
 
-  const newWallet = new Wallet({ _id: address, address });
+  const newWallet = new Wallet({
+    _id: lowerCaseAddress,
+    address: lowerCaseAddress,
+  });
   try {
     await newWallet.save();
     return res.status(200).json({
       status: "ok",
-      message: "Wallet added succesfully",
+      message: "🎉 Wallet succesfully added! 🎉",
     });
   } catch (err) {
     return res.status(400).json({

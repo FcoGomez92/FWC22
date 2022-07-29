@@ -17,7 +17,7 @@ export default function Document() {
           rel="stylesheet"
         />
         {/* <!-- Facebook --> */}
-        {/* <meta property="og:type" content="website" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://fwc22.xyz" />
         <meta
           property="og:title"
@@ -25,25 +25,29 @@ export default function Document() {
         />
         <meta
           property="og:description"
-          content="FWC22 is a Choose to Earn NFT Collection. Choose a team and mint it. If your team win the football world cup 2022 in December you and all the team holders earn the prize pool."
+          content="FWC22 is a Choose-to-Earn NFT Collection. Choose and mint a team. If it win the football world cup 2022 in December you and all the team holders earn the prize pool."
         />
-        <meta property="og:image" content="" /> */}
+        <meta
+          property="og:image"
+          content="https://magnifyer-site.s3.eu-west-3.amazonaws.com/fwc22/meta.png"
+        />
 
         {/* <!-- Twitter --> */}
-        {/* <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://fwc22.xyz" />
+        <meta property="twitter:creator" content="@FWC22xyz" />
         <meta
           property="twitter:title"
           content="Football World Cup 2022 NFT Collection"
         />
         <meta
           property="twitter:description"
-          content="FWC22 is a Choose to Earn NFT Collection. Choose a team and mint it. If your team win the football world cup 2022 in December you and all the team holders earn the prize pool."
+          content="FWC22 is a Choose-to-Earn NFT Collection. Choose and mint a team. If it win the football world cup 2022 in December you and all the team holders earn the prize pool."
         />
         <meta
           property="twitter:image"
-          content=""
-        /> */}
+          content="https://magnifyer-site.s3.eu-west-3.amazonaws.com/fwc22/meta.png"
+        />
       </Head>
       <body>
         <Main />

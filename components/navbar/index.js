@@ -5,9 +5,18 @@ export default function Navbar() {
   return (
     <div className={styles.container}>
       <ul className={styles.list}>
-        <li>RoadMap</li>
-        <li>Team</li>
-        <li>Sponsors</li>
+        <li>
+          <p>RoadMap</p>
+          <span>SOON</span>
+        </li>
+        <li>
+          <p>Team</p>
+          <span>SOON</span>
+        </li>
+        <li>
+          <p>Sponsors</p>
+          <span>SOON</span>
+        </li>
         <li>
           <a href="mailto:info@fwc22.xyz">Contact</a>
         </li>

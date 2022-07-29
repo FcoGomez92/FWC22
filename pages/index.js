@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import Navbar from "../components/navbar";
 import Counter from "../components/counter";
-import Rules from "../components/rules";
+// import Rules from "../components/rules";
 import { Ball } from "../assets";
 import Roadmap from "../components/roadmap";
 

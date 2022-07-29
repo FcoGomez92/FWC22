@@ -5,6 +5,7 @@ import { useCountdown } from "../../hooks/useCountdown";
 export default function Counter() {
   const [days, hours, minutes, seconds] = useCountdown();
   const [address, setAddress] = useState("");
+  const [status, setStatus] = useState("");
 
   function checkInput(input) {
     const pattern = /^0x[a-fA-F0-9]{40}$/;
@@ -26,8 +27,17 @@ export default function Counter() {
       body: JSON.stringify({ address }),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data.message))
-      .catch((err) => console.log(err));
+      .then((data) => {
+        if (data.status === "ok") {
+          setStatus(data.message);
+          setAddress("");
+        }
+        setStatus(data.message);
+      })
+      .catch((err) => {
+        console.log(err);
+        setStatus("🚨Sorry, something went wrong.");
+      });
   }
 
   if (days + hours + minutes + seconds <= 0) {
@@ -79,6 +89,7 @@ export default function Counter() {
             />
             <button onClick={handleSubmit}>JOIN</button>
           </div>
+          <span>{status}</span>
         </div>
       </div>
     );
