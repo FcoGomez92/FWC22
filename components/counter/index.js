@@ -15,9 +15,10 @@ export default function Counter() {
   function handleSubmit() {
     const okAddress = checkInput(address);
     if (!okAddress) {
-      console.log("Invalid Address");
+      setStatus("⛔️ Wallet doesn't fit the pattern.");
       return;
     }
+    setStatus("⏳ Please, wait...");
     fetch("/api/addWallet", {
       method: "POST",
       headers: {

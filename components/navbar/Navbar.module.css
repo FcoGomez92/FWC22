@@ -7,12 +7,30 @@
   animation: showup 2s;
   animation-fill-mode: forwards;
   max-height: 1117px;
+  transition:0.4s;
 }
 .nav_side {
   position:absolute;
   left:-16px;
   top:0;
   z-index:-1
+}
+.hamburguer {
+  position:absolute;
+  top:10px;
+  left:73%; 
+  content:'';
+  width: 50px;
+  height: 50px;
+  transform:rotate(45deg);
+  background:#fff;
+  /* z-index:3; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.hamburguer svg {
+  transform:rotate(-45deg) translateX(12px);
 }
 .list {
   font-family: 'Inter';
@@ -76,18 +94,27 @@
 @media (max-width: 600px) {
   .container {
     z-index: 2;
+    background: #fff;
+  }
+  .hide {
+    left:-90px;
+  }
+  .show {
+    left:0;
   }
   .nav_side{
-    height: 100vh;
-    left:-70px;
+    display:none;
   }
   .list {
-    padding:5px;
+    padding:20px;
     margin:29px 0;
     font-size: 12px;
     gap:60px;
   }
   .twitter_icon {
     width: 20px;
+  }
+  .hamburguer {
+    display:flex;
   }
 }

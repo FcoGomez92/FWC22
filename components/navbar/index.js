@@ -1,9 +1,23 @@
 import styles from "./Navbar.module.css";
-import { NavSide, Twitter } from "../../assets";
+import { useState } from "react";
+import { NavSide, Twitter, Hamburguer } from "../../assets";
 
 export default function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className={styles.container}>
+    <div
+      className={
+        showMenu
+          ? [styles.container, styles.hide].join(" ")
+          : [styles.container, styles.show].join(" ")
+      }
+    >
+      <span
+        className={styles.hamburguer}
+        onClick={() => setShowMenu((prev) => !prev)}
+      >
+        <Hamburguer color="#550065" />
+      </span>
       <ul className={styles.list}>
         <li>
           <p>RoadMap</p>
