@@ -8,8 +8,8 @@ export default function Navbar() {
     <div
       className={
         showMenu
-          ? [styles.container, styles.hide].join(" ")
-          : [styles.container, styles.show].join(" ")
+          ? [styles.container, styles.show].join(" ")
+          : [styles.container, styles.hide].join(" ")
       }
     >
       <span
