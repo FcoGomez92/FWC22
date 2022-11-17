@@ -231,10 +231,12 @@ gap:5px;
   .subtitle,
   .subtitle::after,
   .subtitle::before {
-    width:200px;
+    width: 70%;
     height: 60px;
     font-size: 20px;
-    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .poolAmountContainer {
    flex-direction: column;
