@@ -1,9 +1,14 @@
 import styles from "./Navbar.module.css";
 import { useState } from "react";
-import { NavSide, Twitter, Hamburguer } from "../../assets";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import Wallet from "./Wallet";
+import { Hamburguer, SeparatorBall } from "../../assets";
 
 export default function Navbar() {
+  const router = useRouter();
   const [showMenu, setShowMenu] = useState(false);
+
   return (
     <div
       className={
@@ -16,35 +21,65 @@ export default function Navbar() {
         className={styles.hamburguer}
         onClick={() => setShowMenu((prev) => !prev)}
       >
-        <Hamburguer color="#550065" />
+        <Hamburguer color="#fff" />
       </span>
-      <ul className={styles.list}>
-        <li>
-          <p>RoadMap</p>
-          <span>SOON</span>
-        </li>
-        <li>
-          <p>Team</p>
-          <span>SOON</span>
-        </li>
-        <li>
-          <p>Sponsors</p>
-          <span>SOON</span>
-        </li>
-        <li>
-          <a href="mailto:info@fwc22.xyz">Contact</a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/FWC22xyz"
-            target="_blank"
-            rel="noreferrer"
+      <div className={styles.bkg}>
+        <ul className={styles.list}>
+          <li>
+            <Link href="/">
+              <span>
+                <SeparatorBall color="#F3C041" />
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={
+                router.pathname === "/mint" || router.pathname === "/stats"
+                  ? "/#how-it-works"
+                  : "#how-it-works"
+              }
+            >
+              <p>How it works</p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={
+                router.pathname === "/mint" || router.pathname === "/stats"
+                  ? "/#teams"
+                  : "#teams"
+              }
+            >
+              <p>Teams</p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={
+                router.pathname === "/mint" || router.pathname === "/stats"
+                  ? "/#faqs"
+                  : "#faqs"
+              }
+            >
+              <p>Faqs</p>
+            </Link>
+          </li>
+          <li style={router.pathname === "/mint" ? { color: "#F3C041" } : null}>
+            <Link href="/mint">
+              <p>Mint</p>
+            </Link>
+          </li>
+          {/* <li
+            style={router.pathname === "/stats" ? { color: "#F3C041" } : null}
           >
-            <Twitter color="#A02E4F" />
-          </a>
-        </li>
-      </ul>
-      <NavSide className={styles.nav_side} />
+            <Link href="/stats">
+              <p>Stats</p>
+            </Link>
+          </li> */}
+        </ul>
+        <Wallet />
+      </div>
     </div>
   );
 }

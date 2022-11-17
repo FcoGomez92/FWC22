@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <html lang="en" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -13,7 +12,7 @@ export default function Document() {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@200;300;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@200;300;500;900&display=swap"
           rel="stylesheet"
         />
         {/* <!-- Facebook --> */}
@@ -29,7 +28,7 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content="https://magnifyer-site.s3.eu-west-3.amazonaws.com/fwc22/meta.png"
+          content="https://fwc22.s3.eu-west-3.amazonaws.com/meta.png"
         />
 
         {/* <!-- Twitter --> */}
@@ -46,12 +45,13 @@ export default function Document() {
         />
         <meta
           property="twitter:image"
-          content="https://magnifyer-site.s3.eu-west-3.amazonaws.com/fwc22/meta.png"
+          content="https://fwc22.s3.eu-west-3.amazonaws.com/meta.png"
         />
       </Head>
       <body>
         <Main />
         <NextScript />
+        <div id="modal-root"></div>
       </body>
     </Html>
   );

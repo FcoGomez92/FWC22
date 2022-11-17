@@ -1,0 +1,124 @@
+.container {
+  padding: 0;
+  min-height: calc(100vh - 85px);
+  background: #A02E4F;
+}
+.container:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top:0;
+  left: -0.5rem;
+  background-color: #A02E4F;
+  background-image: linear-gradient(135deg, #eceddc 25%, transparent 25%),
+  linear-gradient(225deg, #eceddc 25%, transparent 25%),
+  linear-gradient(315deg, #eceddc 25%, transparent 25%),
+  linear-gradient(45deg, #eceddc 25%, transparent 25%);;
+  background-position: -0.5rem -0.5rem;
+  background-repeat: repeat;
+  background-size: 1rem 1rem;
+  padding: 0 0.5rem;
+}
+.container:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top:0;
+  right: -0.5rem;
+  background-color: #A02E4F;
+  background-image: linear-gradient(135deg, #eceddc 25%, transparent 25%),
+  linear-gradient(225deg, #eceddc 25%, transparent 25%),
+  linear-gradient(315deg, #eceddc 25%, transparent 25%),
+  linear-gradient(45deg, #eceddc 25%, transparent 25%);;
+  background-position: -0.5rem -0.5rem;
+  background-repeat: repeat;
+  background-size: 1rem 1rem;
+  padding: 0 0.5rem;
+}
+
+.ball {
+  position:fixed;
+  top:50%;
+  left: 50%;
+  width: auto;
+  height: 90vh;
+  z-index:0;
+  opacity: 10%;
+  transform:translate(-50%,-50%);
+}
+
+.mintInfo {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items:center;
+  gap:30px;
+}
+
+.mintInfo p {
+  padding: 10px 20px;
+  width: stretch;
+  border-radius: 5px;
+}
+
+.mint {
+  width: 296px;
+  min-width: 296px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Audiowide";
+  background: linear-gradient(45deg, transparent 5%, #00CFB7 5%);/* Amarillo #edda9d */
+  border: 0;
+  color: #550065; /*Negro #1b1b1b */
+  letter-spacing: 3px;
+  box-shadow: 4px 0px 0px #F3C041;  /*Azul #00e6f6 */
+  outline: transparent;
+  text-align: center;
+  cursor:pointer;
+  transition: 0.4s;
+}
+
+.mint:disabled {
+  cursor: not-allowed;
+  opacity: 50%;
+}
+
+.spinner {
+  margin:0 auto;
+  height: 23px;
+  width: 23px;
+  border: 3px solid #F3C041;
+  border-top-color: #A02E4F;
+  border-radius: 50%;
+  animation: spinner 800ms linear infinite;
+}
+
+@keyframes spinner {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.share {
+  margin-top:20px;
+  text-align: center;
+  color:#550065;
+  font-family: "Inter";
+}
+.share span {
+  color: #00CFB7;
+  font-family: "Audiowide";
+  text-decoration: underline;
+}
+.txInfo span {
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+}

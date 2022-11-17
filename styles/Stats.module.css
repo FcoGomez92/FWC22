@@ -1,0 +1,24 @@
+.container {
+  padding: 0;
+  min-height: calc(100vh - 85px);
+}
+.container button,
+.container input {
+position: relative;
+  z-index: 1;
+}
+
+.ball {
+  position:fixed;
+  top:50%;
+  left: 50%;
+  width: auto;
+  height: 90vh;
+  z-index:0;
+  opacity: 10%;
+  transform:translate(-50%,-50%);
+}
+
+@media (max-width: 600px) {
+
+}

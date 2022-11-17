@@ -1,30 +1,54 @@
 .container {
-  position:fixed;
-  height: 100vh;
-  background: transparent;
+  position:relative;
+  width: 100vw;
   left:0;
   z-index: 1;
-  animation: showup 2s;
-  animation-fill-mode: forwards;
-  max-height: 1117px;
   transition:0.4s;
+  background-color: #A02E4F;
+  border-bottom: solid 1px #862944;
 }
-.nav_side {
-  position:absolute;
-  left:-16px;
+.container:before {
+  content: "";
+  position: absolute;
+  height: 100%;
   top:0;
-  z-index:-1
+  left: -0.5rem;
+  background-color: #A02E4F;
+  background-image: linear-gradient(135deg, #eceddc 25%, transparent 25%),
+  linear-gradient(225deg, #eceddc 25%, transparent 25%),
+  linear-gradient(315deg, #eceddc 25%, transparent 25%),
+  linear-gradient(45deg, #eceddc 25%, transparent 25%);;
+  background-position: -0.5rem -0.5rem;
+  background-repeat: repeat;
+  background-size: 1rem 1rem;
+  padding: 0 0.5rem;
 }
+.container:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top:0;
+  right: -0.5rem;
+  background-color: #A02E4F;
+  background-image: linear-gradient(135deg, #eceddc 25%, transparent 25%),
+  linear-gradient(225deg, #eceddc 25%, transparent 25%),
+  linear-gradient(315deg, #eceddc 25%, transparent 25%),
+  linear-gradient(45deg, #eceddc 25%, transparent 25%);;
+  background-position: -0.5rem -0.5rem;
+  background-repeat: repeat;
+  background-size: 1rem 1rem;
+  padding: 0 0.5rem;
+}
+
 .hamburguer {
   position:absolute;
   top:10px;
-  left:73%; 
+  left:87%; 
   content:'';
   width: 50px;
   height: 50px;
   transform:rotate(45deg);
-  background:#fff;
-  /* z-index:3; */
+  background:#A02E4F;
   justify-content: center;
   align-items: center;
   display: none;
@@ -32,16 +56,25 @@
 .hamburguer svg {
   transform:rotate(-45deg) translateX(12px);
 }
+.bkg {
+  background-color: #A02E4F;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding:0 40px;
+}
 .list {
   font-family: 'Inter';
-  font-weight: 300;
-  color:#A02E4F;
+  font-weight: 500;
+  color:#ebebe5;
   display:flex;
-  flex-direction: column;
   list-style: none;
-  gap:105px;
-  padding:20px;
-  margin:40px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding:7px;
+  max-width: 1440px;
+  width:50%;
 }
 .list li {
   position: relative;
@@ -50,39 +83,75 @@
 .list li:hover {
   cursor:pointer;
   text-decoration: underline;
+  color: #F3C041
 }
-.list li span{
-  position: absolute;
-  top:50%;
-  left: calc(100% + 20px);
-  padding: 10px;
-  /* border-radius: 3px; */
-  background-color: #F3C041;
-  transform: translate(0, -50%);
-  color: #550065;
-  opacity:0;
-  transition: 0.2s;
+.list span {
+  display: flex;
+  align-items: center;
 }
-.list li span::before {
-  content:"";
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  left:-7px;
-  top:50%;
+.walletContainer {
+  height: 29px;
+  padding: 5px 20px;
+  font-family: "Audiowide", cursive;
+  background: linear-gradient(45deg, transparent 5%, #F3C041 5%);/* Amarillo #edda9d */
+  color: #550065; /*Negro #1b1b1b */
+  letter-spacing: 3px;
+  box-shadow: 3px 0px 0px #00CFB7;  /*Azul #00e6f6 */
+  outline: transparent;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: default;
+  margin-left:auto;
+}
+.notConnected:hover {
+  opacity: 80%;
+}
+.walletContainer p,
+.walletContainer button {
+  font-size: 15px;
+}
+
+.walletContainer button {
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;     
+  color:inherit;
+  background-color: transparent;
+  font-family: inherit;
+  letter-spacing: inherit;
+  outline: transparent;
+}
+.badNetwork {
+  position:absolute;
+  top:50px;
+  right: 0;
+  padding:10px 40px;
   background: #F3C041;
-  transform: translate(0,-50%) rotate(45deg);
+  width: 100%;
+  color: #e7134f;
+  font-family: "Inter";
+  font-weight: 500;
+  z-index: 3;
 }
-.list li:hover > span {
-  opacity:1
+.badNetwork p {
+  width: fit-content;
+  margin:0 auto;
 }
-.list svg path:hover{
-  fill: #351721;
+.badNetwork span{
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #eceddc;
+  margin:0 5px; 
+  font-weight: 500;
+  color: #550065;
+  cursor:pointer;
 }
-.twitter_icon {
-  width: 30px;
-  margin:30px;
-}
+
 @keyframes showup {
   0% {
     transform: translateX(-185px);
@@ -93,23 +162,28 @@
 }
 @media (max-width: 600px) {
   .container {
+    position:fixed;
+    top:0;
     z-index: 2;
-    background: #fff;
+    width: 200px;
+    height: 100vh;
+  }
+  .container:after {
+    display: none;
   }
   .hide {
-    left:-90px;
+    left:-185px;
   }
   .show {
     left:0;
   }
-  .nav_side{
-    display:none;
-  }
+
   .list {
-    padding:20px;
+    padding:20px 40px;
     margin:29px 0;
-    font-size: 12px;
+    font-size: 16px;
     gap:60px;
+    flex-direction: column;
   }
   .twitter_icon {
     width: 20px;

@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  padding:30px;
+  margin-top:-70px;
+  z-index: 1;
+  position: relative;
+}
+.container h3{
+  font-family: "Audiowide";
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.container p{
+  font-family: "Inter";
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.separators {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin:0 auto;
+}
+.flex {
+  display: flex;
+  gap: 50px;
+  max-width: 1440px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.element {
+  flex-basis: 30%;
+  padding:40px;
+  background: linear-gradient(45deg, transparent 5%, #F3C041 5%)
+}

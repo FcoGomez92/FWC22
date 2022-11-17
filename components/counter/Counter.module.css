@@ -13,42 +13,40 @@
   align-items: center;
   margin:0;
 }
-.whitelist {
-  margin-left:40px;
+.cta {
   position: relative;
+  display:flex;
+  flex-direction: column;
+  margin-top:35px;
+  gap:15px;
 }
+
+.mint {
+  margin:0 auto;
+  z-index:1;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-family: "Audiowide", cursive;
+  background: linear-gradient(45deg, transparent 5%, #00CFB7 5%);/* Amarillo #edda9d */
+  border: 0;
+  color: #550065; /*Negro #1b1b1b */
+  letter-spacing: 3px;
+  box-shadow: 5px 0px 0px #F3C041;  /*Azul #00e6f6 */
+  outline: transparent;
+  position: relative;
+  text-align: center;
+  cursor:pointer;
+  transition: 0.4s;
+}
+
+.mint:hover {
+  scale:1.05
+}
+
 .text{
   font-size: 30px;
 }
-.whitelist span {
-  position:absolute;
-  top:260%;
-  color:#f3c041;
-}
-.join {
-  position:absolute;
-  top:150%;
-  width: 100%;
-  display:flex;
-  color:#550065;
-  min-width: 415px;
-}
-.join button {
-  padding:10px 15px;
-  border: none;
-  font-family: 'Inter';
-  color:inherit;
-  background: linear-gradient(135deg, #00CFB7 90%, transparent 90%);
-  cursor:pointer ;
-}
-.join input {
-  color:inherit;
-  width: -webkit-fill-available;
-  font-family: 'Inter';
-  border: none;
-  padding:10px;
-  box-shadow: -6px 0px 0px #f3c041;
-}
+
 .pair {
   display: flex;
   flex-direction: column;
@@ -59,7 +57,7 @@
 .round {
   width: 50px;
   height: 50px;
-  border:4px solid #fff;
+  border:4px solid #A02E4F;
   display:grid;
   place-content: center;
   transform: rotate(45deg);
@@ -75,9 +73,9 @@
   top: 150%;
 }
 .separator {
-  width: 10px;
-  height: 10px;
-  background: #fff;
+  width: 6px;
+  height: 6px;
+  background: #A02E4F;
   transform: rotate(45deg);
 }
 
@@ -92,7 +90,7 @@
   .round {
     width: 30px;
     height: 30px;
-    border:2px solid #fff;
+    border:2px solid #A02E4F;
   }
   .round p{
     font-size: 12px;
@@ -106,24 +104,6 @@
   }
   .text {
     font-size: 20px;
-  }
-  .whitelist {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-  }
-  .join {
-    min-width: 300px;
-    position: relative;
-    top:unset;
-  }
-  .join input {
-    font-size: 12px;
-    white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   }
   
 }
