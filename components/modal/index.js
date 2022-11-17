@@ -15,10 +15,10 @@ const Modal = ({ show, onClose, children }) => {
   const modalContent = show ? (
     <div className={styles.modalBackground}>
       <div className={styles.modalContainer}>
-        <div className={styles.modalBody}>{children}</div>
         <button className={styles.modalCTA} onClick={handleCloseClick}>
           <p>X</p>
         </button>
+        <div className={styles.modalBody}>{children}</div>
       </div>
     </div>
   ) : null;

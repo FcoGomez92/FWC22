@@ -166,29 +166,42 @@
     top:0;
     z-index: 2;
     width: 200px;
-    height: 100vh;
+    height: 100%;
+    box-shadow: rgba(83, 12, 57, 0.603) 5px 0 5px 0;
   }
   .container:after {
     display: none;
   }
+  .bkg{
+    flex-direction: column;
+    padding: 0 20px;
+    gap:30px;
+  }
   .hide {
-    left:-185px;
+    left:-200px;
   }
   .show {
     left:0;
   }
 
   .list {
-    padding:20px 40px;
-    margin:29px 0;
+    padding:20px;
+    margin:0;
+    width: max-content;
     font-size: 16px;
     gap:60px;
     flex-direction: column;
   }
-  .twitter_icon {
-    width: 20px;
-  }
   .hamburguer {
     display:flex;
+    padding: 0 20px;
+    box-shadow: rgba(83, 12, 57, 0.603) 5px -4px 5px 0;
+  }
+
+  .walletContainer {
+    padding: 5px 15px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

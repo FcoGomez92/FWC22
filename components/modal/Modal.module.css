@@ -11,7 +11,6 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .modalContainer {
-  /* width: 500px; */
   height: fit-content;
   border-radius: 10px;
   display: flex;
@@ -45,4 +44,29 @@ color: #A02e4f
 .modalBody h2 {
   font-family: "Audiowide";
   margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  
+  .modalContainer{
+    height: 80%;
+    overflow-y: scroll;
+    width: 80%;
+    gap:0;
+  }
+  
+  .modalBody {
+    padding:0 20px 20px 20px;
+  }
+
+  .modalBody h2 {
+    margin-bottom: 15px;
+  }
+
+  .modalCTA {
+    position: sticky;
+    margin: 10px 10px 0 auto;
+    z-index: 2;
+    padding: 10px;
+  }
 }

@@ -39,3 +39,19 @@
   padding:40px;
   background: linear-gradient(45deg, transparent 5%, #F3C041 5%)
 }
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: 0;
+    padding: 15px;
+  }
+  
+  .flex {
+    flex-direction: column;
+  }
+
+  .element {
+    padding: 20px;
+    text-align: end;
+  }
+}

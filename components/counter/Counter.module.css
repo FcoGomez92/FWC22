@@ -82,7 +82,7 @@
 @media (max-width: 600px) {
   .container {
     flex-direction:column;
-    gap:70px;
+    gap:10px;
   }
   .counter {
     gap:15px;

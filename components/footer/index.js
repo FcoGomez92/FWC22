@@ -27,7 +27,12 @@ export default function Footer() {
         <a className={styles.handler} href="">
           Front Code
         </a>
-        <a className={styles.handler} href="">
+        <a
+          className={styles.handler}
+          href="https://polygonscan.com/address/0x1238e99dc1e5fc740efa01c3bece97186a198020#code"
+          target="_blank"
+          rel="noreferrer"
+        >
           Smart Contract
         </a>
       </section>

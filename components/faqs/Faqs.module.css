@@ -78,3 +78,14 @@ margin-right: 12px;
 .mint:hover {
   scale:1.05
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px;
+  }
+
+  .container h2 {
+    text-align: end;
+  }
+
+}

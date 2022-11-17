@@ -64,3 +64,12 @@
 .twitter_icon svg path:hover{
   fill: #F3C041;
 }
+
+@media (max-width: 600px) {
+  
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}

@@ -120,5 +120,17 @@
 }
 
 @media (max-width: 600px) {
+  .container::after,
+  .container::before {
+    content: none;
+  }
+
+  .mintInfo {
+    flex-direction: column;
+  }
+  .mint {
+    width: 100%;
+    min-width: unset;
+  }
 
 }

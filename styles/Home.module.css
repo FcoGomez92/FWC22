@@ -236,4 +236,14 @@ gap:5px;
     font-size: 20px;
     line-height: 60px;
   }
+  .poolAmountContainer {
+   flex-direction: column;
+   margin-top: 0;
+   gap: 10px;
+align-items: center;
+  }
+  
+  .poolAmountContainer span{
+gap: 10px;
+  }
 }
