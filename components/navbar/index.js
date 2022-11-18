@@ -25,14 +25,14 @@ export default function Navbar() {
       </span>
       <div className={styles.bkg}>
         <ul className={styles.list}>
-          <li>
+          <li onClick={() => setShowMenu((prev) => !prev)}>
             <Link href="/">
               <span>
                 <SeparatorBall color="#F3C041" />
               </span>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setShowMenu((prev) => !prev)}>
             <Link
               href={
                 router.pathname === "/mint" || router.pathname === "/stats"
@@ -43,7 +43,7 @@ export default function Navbar() {
               <p>How it works</p>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setShowMenu((prev) => !prev)}>
             <Link
               href={
                 router.pathname === "/mint" || router.pathname === "/stats"
@@ -54,7 +54,7 @@ export default function Navbar() {
               <p>Teams</p>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setShowMenu((prev) => !prev)}>
             <Link
               href={
                 router.pathname === "/mint" || router.pathname === "/stats"
@@ -65,7 +65,10 @@ export default function Navbar() {
               <p>Faqs</p>
             </Link>
           </li>
-          <li style={router.pathname === "/mint" ? { color: "#F3C041" } : null}>
+          <li
+            style={router.pathname === "/mint" ? { color: "#F3C041" } : null}
+            onClick={() => setShowMenu((prev) => !prev)}
+          >
             <Link href="/mint">
               <p>Mint</p>
             </Link>

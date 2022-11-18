@@ -17,7 +17,7 @@ export default function Counter() {
       </div>
       <div className={styles.cta}>
         <div className={styles.text}>
-          <p>Until next price increase</p>
+          <p>Until the next price increase</p>
         </div>
         <Link href="/mint">
           <p className={styles.mint}>Mint now!</p>

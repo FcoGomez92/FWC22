@@ -1,21 +1,17 @@
 import styles from "../../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import useProvider from "../../hooks/useProvider";
 import useContract from "../../hooks/useContract";
-import { getPrizePoolAmount } from "../../helpers/walletFunctions";
+import { formatEther } from "ethers/lib/utils";
 
 export default function PrizePool() {
-  const [poolAmount, setPoolAmount] = useState("100.0");
+  const [poolAmount, setPoolAmount] = useState("-");
   const [eventCounter, setEventCounter] = useState(0);
-  const provider = useProvider();
   const contract = useContract();
 
   useEffect(() => {
-    if (provider) {
-      getPrizePoolAmount(setPoolAmount, provider);
-    }
-  }, [provider, eventCounter]);
+    getPrizePoolAmount();
+  }, [eventCounter]);
 
   useEffect(() => {
     if (contract) {
@@ -32,6 +28,16 @@ export default function PrizePool() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [contract]);
 
+  const getPrizePoolAmount = async () => {
+    const response = await fetch(
+      `https://api.polygonscan.com/api?module=account&action=balance&address=${process.env.NEXT_PUBLIC_CONTRACT_ADDRESS}&apikey=${process.env.NEXT_PUBLIC_POLYGON_API_KEY}`
+    );
+    const data = await response.json();
+    if (data && data.status === "1") {
+      setPoolAmount(formatEther(data.result));
+    }
+  };
+
   const setupEventListener = async () => {
     try {
       contract.on("NewContribution", (user, amount) => {
@@ -47,7 +53,7 @@ export default function PrizePool() {
 
   return (
     <div className={styles.poolAmountContainer}>
-      <h3>Current Prize Pool:</h3>
+      <h3>Prize Pool:</h3>
       <span>
         {poolAmount}{" "}
         <Image

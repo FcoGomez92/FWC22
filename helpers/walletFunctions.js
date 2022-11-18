@@ -9,16 +9,6 @@ export const formatNumber = (number, decimals) =>
 export const formatBalance = (balance) =>
   formatNumber(ethers.utils.formatEther(balance), 2);
 
-export const getPrizePoolAmount = async (handler, provider) => {
-  const { chainId } = await provider.getNetwork();
-  if (chainId === parseInt(process.env.NEXT_PUBLIC_CHAIN_ID)) {
-    const poolAmount = await provider.getBalance(
-      process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
-    );
-    handler(ethers.utils.formatEther(poolAmount));
-  }
-};
-
 export const checkIfWalletIsConnected = async (handler, provider) => {
   const accounts = await window.ethereum.request({ method: "eth_accounts" });
 

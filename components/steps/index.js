@@ -13,16 +13,15 @@ export default function Steps() {
         <article className={styles.element}>
           <h3>1. Mint</h3>
           <p>
-            Your preferred team, the strongest, the team of your nation or one
-            of each. You can mint as many as you want!
+            Your preferred team, the strongest one, the team of your nation, or
+            one of each. You can mint as many as you want!
           </p>
         </article>
         <article className={styles.element}>
           <h3>2. Hodl</h3>
           <p>
-            Wait until the end of the final match. While you are waiting, you
-            can share this project, because each NFT minted increase the prize
-            pool!
+            Until the World Cup ends. While you are waiting, you can help us
+            share the project. Each NFT minted increases the prize pool!
           </p>
         </article>
         <article className={styles.element}>

@@ -88,4 +88,7 @@ margin-right: 12px;
     text-align: end;
   }
 
+  .answer {
+    padding: 20px 30px;
+  }
 }
