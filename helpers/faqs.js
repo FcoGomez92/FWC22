@@ -40,12 +40,12 @@ export const faqs = [
   },
   {
     question:
-      "What % of the prize pool will be shared out with the holders of the champion team's NFTs",
+      "What % of the prize pool will be shared out with the holders of the champion team's NFTs?",
     answer:
       "- 80% of the prize pool will be distributed to the winning holders.",
   },
   {
-    question: "How will be calculated the rewards?",
+    question: "How the rewards will be calculated?",
     answer:
       "- The total amount to distribute is divided by the number of the champion team's tokens minted. Example: Spain wins the World Cup. 1000 $Matic to distribute and 10 Spain supporter tokens minted. Each winning token has a 100 $Matic reward. If you hold 2 Spain supporter tokens, you can claim 200 $Matic.",
   },
