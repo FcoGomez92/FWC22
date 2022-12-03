@@ -7,7 +7,7 @@ export const faqs = [
   {
     question: "How much is the mint?",
     answer:
-      "- Three different price tiers depending on each team's probability of winning. Low Tier: 10 $Matic. Medium Tier: 20 $Matic. Top Tier: 30 $Matic.",
+      "- Three different price tiers depending on each team's probability of winning.",
   },
   {
     question: "When is the last day to mint?",
