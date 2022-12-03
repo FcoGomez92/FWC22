@@ -1,7 +1,7 @@
 export const priceByTier = {
-  low: "10",
-  medium: "20",
-  top: "30",
+  low: "100",
+  medium: "200",
+  top: "300",
 };
 
 export const probabilityByTier = {
