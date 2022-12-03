@@ -153,6 +153,7 @@ justify-content: space-evenly;
 }
 .mintTeam{
   cursor:pointer;
+  position:relative;
 } 
 .mintTeam:hover{
   opacity: 0.6;
@@ -178,7 +179,7 @@ justify-content: space-evenly;
 
 .price {
   position: absolute;
-  right: 5px;
+  left: 83%;
   font-size: 14px;
   color:#550065;
   font-weight: 500;
@@ -187,6 +188,8 @@ justify-content: space-evenly;
   display: flex;
   align-items: center;
   gap: 3px;
+  justify-content: flex-end;
+  width: 50px;
 }
 .price:nth-child(2) {
   margin-left:5px;
