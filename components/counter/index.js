@@ -4,24 +4,30 @@ import { useCountdown } from "../../hooks/useCountdown";
 import { CounterUnit } from "./CounterUnit";
 
 export default function Counter() {
-  const [days, hours, minutes, seconds] = useCountdown();
+  const [days, hours, minutes, seconds, countDown] = useCountdown();
 
   return (
     <div className={styles.container}>
       <div className={styles.counter}>
         <div className={styles.separator}></div>
-        <CounterUnit unit={days} text="Days" />
-        <CounterUnit unit={hours} text="Hours" />
-        <CounterUnit unit={minutes} text="Minutes" />
-        <CounterUnit unit={seconds} text="Seconds" />
+        <CounterUnit unit={countDown > 0 ? days : 0} text="Days" />
+        <CounterUnit unit={countDown > 0 ? hours : 0} text="Hours" />
+        <CounterUnit unit={countDown > 0 ? minutes : 0} text="Minutes" />
+        <CounterUnit unit={countDown > 0 ? seconds : 0} text="Seconds" />
       </div>
       <div className={styles.cta}>
         <div className={styles.text}>
-          <p>Until last mint day</p>
+          <p>
+            {countDown > 0
+              ? "Until last mint day"
+              : "Minting time has finished!"}
+          </p>
         </div>
-        <Link href="/mint">
-          <p className={styles.mint}>Mint now!</p>
-        </Link>
+        {countDown > 0 && (
+          <Link href="/mint">
+            <p className={styles.mint}>Mint now!</p>
+          </Link>
+        )}
       </div>
     </div>
   );
