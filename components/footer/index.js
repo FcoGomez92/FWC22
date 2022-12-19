@@ -24,7 +24,12 @@ export default function Footer() {
         <Twitter color="#fff" />
       </a>
       <section className={styles.code}>
-        <a className={styles.handler} href="">
+        <a
+          className={styles.handler}
+          href="https://github.com/FcoGomez92/FWC22"
+          target="_blank"
+          rel="noreferrer"
+        >
           Front Code
         </a>
         <a

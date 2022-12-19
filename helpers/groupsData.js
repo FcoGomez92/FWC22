@@ -86,7 +86,8 @@ export const groupsData = [
         id: 3,
         loser: false,
         tier: "top",
-        image: "https://fwc22.s3.eu-west-3.amazonaws.com/Argentina/Alive.png",
+        image:
+          "https://fwc22.s3.eu-west-3.amazonaws.com/Argentina/Champion.png",
       },
       {
         flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/KSA?tx=c_fill,g_auto,q_auto",
@@ -122,9 +123,9 @@ export const groupsData = [
         flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/FRA?tx=c_fill,g_auto,q_auto",
         name: "France",
         id: 1,
-        loser: false,
+        loser: true,
         tier: "top",
-        image: "https://fwc22.s3.eu-west-3.amazonaws.com/France/Alive.png",
+        image: "https://fwc22.s3.eu-west-3.amazonaws.com/France/Eliminated.png",
       },
       {
         flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/AUS?tx=c_fill,g_auto,q_auto",

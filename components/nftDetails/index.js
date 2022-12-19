@@ -34,7 +34,7 @@ export default function NftDetails({ team, tokenId }) {
         </div>
         <div className={styles.dataPair}>
           <h3>Status:</h3>
-          <p>{team.loser ? "❌ Eliminated ❌" : "⚽️ Alive ⚽️"}</p>
+          <p>{team.loser ? "❌ Eliminated ❌" : "🏆 Champion 🏆"}</p>
         </div>
         <div className={styles.dataPair}>
           <h3>Price:</h3>

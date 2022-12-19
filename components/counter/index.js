@@ -17,11 +17,15 @@ export default function Counter() {
       </div>
       <div className={styles.cta}>
         <div className={styles.text}>
-          <p>
-            {countDown > 0
-              ? "Until last mint day"
-              : "Minting time has finished!"}
-          </p>
+          {countDown > 0 ? (
+            <p>Until last mint day</p>
+          ) : (
+            <p>
+              FWC 2022 is over.
+              <br />
+              Congrats Argentina! 🎉
+            </p>
+          )}
         </div>
         {countDown > 0 && (
           <Link href="/mint">
