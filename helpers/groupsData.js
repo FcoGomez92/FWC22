@@ -3,7 +3,7 @@ export const groupsData = [
     title: "Group A",
     teams: [
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/QAT?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/QAT",
         name: "Qatar",
         id: 20,
         loser: true,
@@ -11,7 +11,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/Qatar/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/ECU?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/ECU",
         name: "Ecuador",
         id: 24,
         loser: true,
@@ -20,7 +20,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Ecuador/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/SEN?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN",
         name: "Senegal",
         id: 23,
         loser: true,
@@ -29,7 +29,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Senegal/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/NED?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/NED",
         name: "Netherlands",
         id: 8,
         loser: true,
@@ -43,7 +43,7 @@ export const groupsData = [
     title: "Group B",
     teams: [
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/ENG?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG",
         name: "England",
         id: 4,
         loser: true,
@@ -52,7 +52,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/England/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/IRN?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN",
         name: "Iran",
         id: 16,
         loser: true,
@@ -60,7 +60,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/Iran/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/USA?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/USA",
         name: "USA",
         id: 18,
         loser: true,
@@ -68,7 +68,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/USA/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/WAL?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/WAL",
         name: "Wales",
         id: 19,
         loser: true,
@@ -81,7 +81,7 @@ export const groupsData = [
     title: "Group C",
     teams: [
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/ARG?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG",
         name: "Argentina",
         id: 3,
         loser: false,
@@ -90,7 +90,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Argentina/Champion.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/KSA?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/KSA",
         name: "Saudi Arabia",
         id: 31,
         loser: true,
@@ -99,7 +99,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Saudi-Arabia/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/MEX?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX",
         name: "Mexico",
         id: 13,
         loser: true,
@@ -107,7 +107,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/Mexico/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/POL?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/POL",
         name: "Poland",
         id: 15,
         loser: true,
@@ -120,7 +120,7 @@ export const groupsData = [
     title: "Group D",
     teams: [
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/FRA?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA",
         name: "France",
         id: 1,
         loser: true,
@@ -128,7 +128,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/France/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/AUS?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS",
         name: "Australia",
         id: 25,
         loser: true,
@@ -137,7 +137,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Australia/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/DEN?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/DEN",
         name: "Denmark",
         id: 12,
         loser: true,
@@ -146,7 +146,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Denmark/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/TUN?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/TUN",
         name: "Tunisia",
         id: 27,
         loser: true,
@@ -160,7 +160,7 @@ export const groupsData = [
     title: "Group E",
     teams: [
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/ESP?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP",
         name: "Spain",
         id: 5,
         loser: true,
@@ -168,7 +168,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/Spain/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/CRC?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/CRC",
         name: "Costa Rica",
         id: 32,
         loser: true,
@@ -177,7 +177,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Costa-Rica/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/GER?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/GER",
         name: "Germany",
         id: 6,
         loser: true,
@@ -186,7 +186,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Germany/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/JPN?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN",
         name: "Japan",
         id: 17,
         loser: true,
@@ -199,7 +199,7 @@ export const groupsData = [
     title: "Group F",
     teams: [
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/BEL?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL",
         name: "Belgium",
         id: 7,
         loser: true,
@@ -208,7 +208,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Belgium/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/CAN?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN",
         name: "Canada",
         id: 29,
         loser: true,
@@ -216,7 +216,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/Canada/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/MAR?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR",
         name: "Morocco",
         id: 28,
         loser: true,
@@ -225,7 +225,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Morocco/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/CRO?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/CRO",
         name: "Croatia",
         id: 10,
         loser: true,
@@ -239,7 +239,7 @@ export const groupsData = [
     title: "Group G",
     teams: [
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/BRA?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA",
         name: "Brazil",
         id: 2,
         loser: true,
@@ -247,7 +247,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/Brazil/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/SRB?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/SRB",
         name: "Serbia",
         id: 22,
         loser: true,
@@ -255,7 +255,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/Serbia/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/SUI?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI",
         name: "Switzerland",
         id: 14,
         loser: true,
@@ -264,7 +264,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Switzerland/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/CMR?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/CMR",
         name: "Cameroon",
         id: 30,
         loser: true,
@@ -278,7 +278,7 @@ export const groupsData = [
     title: "Group H",
     teams: [
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/POR?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/POR",
         name: "Portugal",
         id: 9,
         loser: true,
@@ -287,7 +287,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Portugal/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/GHA?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/GHA",
         name: "Ghana",
         id: 26,
         loser: true,
@@ -295,7 +295,7 @@ export const groupsData = [
         image: "https://fwc22.s3.eu-west-3.amazonaws.com/Ghana/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/URU?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/URU",
         name: "Uruguay",
         id: 11,
         loser: true,
@@ -304,7 +304,7 @@ export const groupsData = [
           "https://fwc22.s3.eu-west-3.amazonaws.com/Uruguay/Eliminated.png",
       },
       {
-        flag: "https://cloudinary.fifa.com/api/v3/picture/flags-sq-2/KOR?tx=c_fill,g_auto,q_auto",
+        flag: "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR",
         name: "Korea",
         id: 21,
         loser: true,
